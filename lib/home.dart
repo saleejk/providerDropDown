@@ -14,10 +14,10 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(pro.selectedValue == 'one'
-                  ? '1'
+                  ? '1111'
                   : pro.selectedValue == 'two'
-                      ? '2'
-                      : '3'),
+                      ? '2222'
+                      : '3333'),
               DropdownButton(
                 items: [
                   DropdownMenuItem(value: 'one', child: Text('1')),
