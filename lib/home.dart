@@ -25,7 +25,19 @@ class Home extends StatelessWidget {
                   DropdownMenuItem(value: 'three', child: Text('3'))
                 ],
                 onChanged: (value) => pro.changeValue(value),
-              )
+              ),
+              Consumer<DropDown>(builder: (context, providerr, child) {
+                return GestureDetector(
+                  onTap: () {
+                    providerr.changeColor();
+                  },
+                  child: Container(
+                    width: 200,
+                    height: 200,
+                    color: providerr.colors[providerr.index],
+                  ),
+                );
+              })
             ],
           );
         }),
